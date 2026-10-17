@@ -1,0 +1,46 @@
+:root {
+  /* تم هلوکیتی (پیش‌فرض) */
+  --bg: #fff0f5;
+  --card: #ffffff;
+  --primary: #ff69b4;
+  --primary-light: #ffb6c1;
+  --text: #4a0033;
+  --text-light: #8b5a7a;
+  --border: #ffc0cb;
+  --success: #98fb98;
+  --danger: #ff6b6b;
+  --shadow: 0 4px 15px rgba(255, 105, 180, 0.15);
+}
+
+[data-theme="batman"] {
+  --bg: #0a0a0a;
+  --card: #1a1a1a;
+  --primary: #00ff9f;
+  --primary-light: #00cc7a;
+  --text: #e0e0e0;
+  --text-light: #a0a0a0;
+  --border: #333;
+  --success: #00ff9f;
+  --danger: #ff4444;
+  --shadow: 0 4px 20px rgba(0, 255, 159, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
+}
